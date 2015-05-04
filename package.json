@@ -1,0 +1,26 @@
+{
+  "name": " babel-module-indexes-example",
+  "version": "1.1.0",
+  "description": "Example of how to have directory index.js files take the parent dir name for easy relative imports",
+  "main": "index.js",
+  "scripts": {
+    "build": "rm -rf dist && broccoli build dist",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jayphelps/babel-module-indexes-example.git"
+  },
+  "author": "Jay Phelps <hello@jayphelps.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jayphelps/babel-module-indexes-example/issues"
+  },
+  "homepage": "https://github.com/jayphelps/babel-module-indexes-example",
+  "devDependencies": {
+    "babel": ">=5.2.11",
+    "broccoli": "^0.16.2",
+    "broccoli-babel-transpiler": "^5.0.0",
+    "broccoli-concat": "0.0.13"
+  }
+}
