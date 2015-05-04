@@ -1,5 +1,6 @@
 var esTranspiler = require('broccoli-babel-transpiler');
 var concat = require('broccoli-concat');
+var pkg = require('./package.json');
 
 var src = esTranspiler('src', {
   moduleIds: true,
@@ -27,5 +28,5 @@ module.exports = concat(src, {
   inputFiles: [
     '**/*.js'
   ],
-  outputFile: '/output.js'
+  outputFile: '/' + pkg.name + '.js'
 });
